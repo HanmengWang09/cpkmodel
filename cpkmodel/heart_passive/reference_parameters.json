@@ -1,0 +1,67 @@
+{
+  "walls": [
+    {
+      "name": "LA",
+      "wall_volume_ml": 4.46069398,
+      "reference_area_cm2": 42.5687,
+      "stress_passive_pa": 2248.53598,
+      "stress_scale_pa": 84000.0
+    },
+    {
+      "name": "RA",
+      "wall_volume_ml": 2.14548521,
+      "reference_area_cm2": 40.1573,
+      "stress_passive_pa": 2684.76100348,
+      "stress_scale_pa": 84000.0
+    },
+    {
+      "name": "LW",
+      "wall_volume_ml": 73.5720515,
+      "reference_area_cm2": 96.6859,
+      "stress_passive_pa": 731.24545453,
+      "stress_scale_pa": 120000.0
+    },
+    {
+      "name": "SW",
+      "wall_volume_ml": 18.8904978,
+      "reference_area_cm2": 28.9936,
+      "stress_passive_pa": 729.06063771,
+      "stress_scale_pa": 120000.0
+    },
+    {
+      "name": "RW",
+      "wall_volume_ml": 36.7720116,
+      "reference_area_cm2": 108.4227,
+      "stress_passive_pa": 749.47694522,
+      "stress_scale_pa": 120000.0
+    }
+  ],
+  "metadata": {
+    "sources_sha256": {
+      "runs/coupling_tables_20261021/registry.json": "dc4dd12830bf2918dec86701a05ec2e910a00f728836e61a7d58a39f714e31e2",
+      "docs/cardio-pulmonary-renal-coupled-equations-20261021.md": "a4387ef23e1bc5301e15a1e278de6eebbdeae83c7716ff3fc15f7d2a0bc7333b",
+      "D:/data/OneDrive/Desktop/TriSeg.pdf": "981b071dfa059b589c4ed46d87e9f2384a0794f8bb092bbed06f07c20fc034aa"
+    },
+    "source_urls": [
+      "https://framework.circadapt.org/2409/userguide/components/patch/patch.html",
+      "https://framework.circadapt.org/2409/userguide/components/wall/wall.html",
+      "https://framework.circadapt.org/2409/userguide/components/node/cavity/Bag.html",
+      "https://framework.circadapt.org/2409/_modules/circadapt/model/vanosta2024.html"
+    ],
+    "definition": "继承已冻结主表参数；主动激活为0，保留titin尺度；原始应力不裁剪",
+    "reference_cavity_volumes_ml": [
+      50.0,
+      130.0,
+      50.0,
+      130.0
+    ],
+    "order": [
+      "LA",
+      "LV",
+      "RA",
+      "RV"
+    ],
+    "geometry_reference": "TriSeg附件A4/C4，去除常数并使平壁参考应变为0"
+  },
+  "global": {}
+}

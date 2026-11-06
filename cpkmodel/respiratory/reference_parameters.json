@@ -1,0 +1,36 @@
+{
+  "mechanics": {
+    "laryngeal_compliance": 0.00127,
+    "tracheal_compliance": 0.00238,
+    "bronchial_compliance": 0.0131,
+    "alveolar_compliance": 0.2,
+    "chest_wall_compliance": 0.2445,
+    "abdominal_compliance": 0.183,
+    "laryngeal_unstressed": 0.0344,
+    "tracheal_unstressed": 0.00663,
+    "bronchial_unstressed": 0.0187,
+    "alveolar_unstressed": 1.263,
+    "mouth_resistance": 1.021,
+    "larynx_trachea_resistance": 0.3369,
+    "trachea_bronchi_resistance": 0.3063,
+    "bronchi_alveoli_resistance": 0.0817,
+    "inspiratory_expiratory_ratio": 0.6,
+    "expiration_tau_fraction": 0.2,
+    "pleural_end_expiratory": -5.0,
+    "abdominal_end_expiratory": 2.45,
+    "nominal_frc": 2.4
+  },
+  "metadata": {
+    "sources_sha256": {
+      "runs/coupling_tables_20261021/source_archive/Cardio-respiratory-model-main/source_files/lungMechanics.cc": "5da1b1c09308f4ab5a1c8f9de13fc906f6f636ab56b9c51a4bf5c71b8dd403e2",
+      "runs/coupling_tables_20261021/source_archive/Cardio-respiratory-model-main/test/params/lungMechanics.dat": "f47feb182afd54eb8762060c1a2165fff0dec79d6e7be34bf23d21dbd6a52985",
+      "runs/coupling_tables_20261021/source_archive/Cardio-respiratory-model-main/test/params/commonParams.dat": "eb67bf481a1044e6caafe41534f7fe5e7e4b3b89c72ee0545c59b72200d09abb",
+      "cardiopinn/fluid/reference_parameters.json": "2c524349a9c735196838dff4493b1aee2b19bfae60f6785b7f418f46592992af"
+    },
+    "equations": "R01-R08, existing coupled equations 20261021",
+    "source_authors": "Bianca Maria Laudenzi, Caterina Dalmaso, Lucas Omar Muller (2025), Apache-2.0",
+    "rbA_note": "file rba differs from source rbA, actual default 0.0817 used",
+    "heart_interface": "conservative_zero_storage_bridge_with_fixed_transmural_atrial_pressures",
+    "scope": "self-breathing mechanics only; no blood gas, no lung water to CA feedback"
+  }
+}

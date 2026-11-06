@@ -1,0 +1,17 @@
+{
+  "duration": 8.5,
+  "sample": 0.01,
+  "method": "Radau",
+  "rtol": 1e-8,
+  "atol": 1e-10,
+  "max_step": 0.01,
+  "boundary": {
+    "water_input": 0.017361111111111112,
+    "sodium_input": 0.001736111111111111,
+    "filtration_scale": 1.0,
+    "water_excretion_shift": 0.0,
+    "sodium_excretion_shift": 0.0,
+    "respiratory_rate": 12.0,
+    "muscle_pressure_min": -5.0
+  }
+}

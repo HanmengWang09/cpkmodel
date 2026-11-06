@@ -1,0 +1,449 @@
+{
+  "vascular": {
+    "linear_pools": [
+      {
+        "name": "SA",
+        "compliance": 0.196,
+        "unstressed_volume": 0,
+        "thoracic": false
+      },
+      {
+        "name": "EP",
+        "compliance": 0.641886,
+        "unstressed_volume": 134.64,
+        "thoracic": false
+      },
+      {
+        "name": "SP",
+        "compliance": 0.686154,
+        "unstressed_volume": 274.4,
+        "thoracic": false
+      },
+      {
+        "name": "MP",
+        "compliance": 0.57288,
+        "unstressed_volume": 105.8,
+        "thoracic": false
+      },
+      {
+        "name": "HP",
+        "compliance": 0.10416,
+        "unstressed_volume": 24,
+        "thoracic": false
+      },
+      {
+        "name": "BP",
+        "compliance": 0.36456,
+        "unstressed_volume": 72.13,
+        "thoracic": false
+      },
+      {
+        "name": "EV",
+        "compliance": 14,
+        "unstressed_volume": 640.73,
+        "thoracic": false
+      },
+      {
+        "name": "SV",
+        "compliance": 42.777,
+        "unstressed_volume": 1435.4,
+        "thoracic": false
+      },
+      {
+        "name": "MV",
+        "compliance": 10.997,
+        "unstressed_volume": 503.26,
+        "thoracic": false
+      },
+      {
+        "name": "HV",
+        "compliance": 2.499,
+        "unstressed_volume": 98.21,
+        "thoracic": false
+      },
+      {
+        "name": "BV",
+        "compliance": 7.497,
+        "unstressed_volume": 294.64,
+        "thoracic": false
+      },
+      {
+        "name": "PA",
+        "compliance": 0.76,
+        "unstressed_volume": 0,
+        "thoracic": true
+      },
+      {
+        "name": "PP",
+        "compliance": 5.7014,
+        "unstressed_volume": 106.39992,
+        "thoracic": true
+      },
+      {
+        "name": "PV",
+        "compliance": 25.37,
+        "unstressed_volume": 105.6,
+        "thoracic": true
+      },
+      {
+        "name": "PS",
+        "compliance": 0.09860000000000001,
+        "unstressed_volume": 1.84008,
+        "thoracic": true
+      }
+    ],
+    "resistors": [
+      {
+        "name": "SA_EP",
+        "upstream": "SA",
+        "downstream": "EP",
+        "resistance": 0.002080262117752142,
+        "one_way": false
+      },
+      {
+        "name": "EP_EV",
+        "upstream": "EP",
+        "downstream": "EV",
+        "resistance": 6.540047290677262,
+        "one_way": false
+      },
+      {
+        "name": "EV_TV",
+        "upstream": "EV",
+        "downstream": "TV",
+        "resistance": 0.08321048471008569,
+        "one_way": true
+      },
+      {
+        "name": "SA_SP",
+        "upstream": "SA",
+        "downstream": "SP",
+        "resistance": 0.002080262117752142,
+        "one_way": false
+      },
+      {
+        "name": "SP_SV",
+        "upstream": "SP",
+        "downstream": "SV",
+        "resistance": 3.8850920007174645,
+        "one_way": false
+      },
+      {
+        "name": "SV_TV",
+        "upstream": "SV",
+        "downstream": "TV",
+        "resistance": 0.0790499604745814,
+        "one_way": true
+      },
+      {
+        "name": "SA_MP",
+        "upstream": "SA",
+        "downstream": "MP",
+        "resistance": 0.002080262117752142,
+        "one_way": false
+      },
+      {
+        "name": "MP_MV",
+        "upstream": "MP",
+        "downstream": "MV",
+        "resistance": 4.3812553660743685,
+        "one_way": false
+      },
+      {
+        "name": "MV_TV",
+        "upstream": "MV",
+        "downstream": "TV",
+        "resistance": 0.10401310588760711,
+        "one_way": true
+      },
+      {
+        "name": "SA_HP",
+        "upstream": "SA",
+        "downstream": "HP",
+        "resistance": 0.002080262117752142,
+        "one_way": false
+      },
+      {
+        "name": "HP_HV",
+        "upstream": "HP",
+        "downstream": "HV",
+        "resistance": 41.00422610065441,
+        "one_way": false
+      },
+      {
+        "name": "HV_TV",
+        "upstream": "HV",
+        "downstream": "TV",
+        "resistance": 0.46597871437647986,
+        "one_way": true
+      },
+      {
+        "name": "SA_BP",
+        "upstream": "SA",
+        "downstream": "BP",
+        "resistance": 0.002080262117752142,
+        "one_way": false
+      },
+      {
+        "name": "BP_BV",
+        "upstream": "BP",
+        "downstream": "BV",
+        "resistance": 13.869248416592173,
+        "one_way": false
+      },
+      {
+        "name": "BV_TV",
+        "upstream": "BV",
+        "downstream": "TV",
+        "resistance": 0.15601965883141064,
+        "one_way": true
+      },
+      {
+        "name": "PA_PP",
+        "upstream": "PA",
+        "downstream": "PP",
+        "resistance": 0.0488289400077796,
+        "one_way": false
+      },
+      {
+        "name": "PP_PV",
+        "upstream": "PP",
+        "downstream": "PV",
+        "resistance": 0.03662259912718255,
+        "one_way": false
+      },
+      {
+        "name": "PA_PS",
+        "upstream": "PA",
+        "downstream": "PS",
+        "resistance": 2.8234616486851376,
+        "one_way": false
+      },
+      {
+        "name": "PS_PV",
+        "upstream": "PS",
+        "downstream": "PV",
+        "resistance": 2.117596236513853,
+        "one_way": false
+      }
+    ],
+    "thoracic_vein": {
+      "d1": 0.3855,
+      "k1": 0.15,
+      "d2": -5,
+      "k2": 0.4,
+      "unstressed_volume": 130,
+      "vmin": 50,
+      "vmax": 350,
+      "kxp": 2,
+      "kxv": 8,
+      "kr": 0.001,
+      "r0": 0.025
+    },
+    "pleural_pressure": -3.6778,
+    "pulmonary_outflow_resistance": 0.012,
+    "metadata": {
+      "stage": "fluid_step3_vascular",
+      "renal_enabled": true,
+      "fluid_exchange_enabled": true,
+      "units": {
+        "volume": "mL",
+        "pressure": "mmHg",
+        "time": "s",
+        "flow": "mL/s"
+      },
+      "alpha_R": 2.080262117752142,
+      "archive_sha256": "3222f9ea8d3ea57886161a90e7e148af30bb477471fb38c1d7b49cf8e300d06f",
+      "source_files": [
+        "Cardio-respiratory-model-main/test/params/cardiovascular.dat",
+        "Cardio-respiratory-model-main/test/params/commonParams.dat"
+      ],
+      "reference_boundary": {
+        "systemic_inflow": 83.33333333333333,
+        "pulmonary_inflow": 83.33333333333333,
+        "right_atrial_pressure": 4.5,
+        "left_atrial_pressure": 8
+      },
+      "derivation": "第3步D02—D19：Qs=5000/60，Qr=Qs+.002；交换床Rin/Rout分别按参考qin与qout推导。",
+      "deviations": [
+        "TV的psi使用文献Kxp/expm1(V/Kxv)，原C++的exp(V/Kxv-1)不沿用。",
+        "所有压力由当前容积纯函数计算，避免原实现历史缓存。",
+        "e区已拆非肾交换床和肾通路；五个微循环单阻力仅作基础图占位，实际由Rin/Rout和J替代。"
+      ]
+    },
+    "pool_names": [
+      "SA",
+      "EP",
+      "SP",
+      "MP",
+      "HP",
+      "BP",
+      "EV",
+      "SV",
+      "MV",
+      "HV",
+      "BV",
+      "TV",
+      "PA",
+      "PP",
+      "PV",
+      "PS"
+    ]
+  },
+  "renal": {
+    "afferent_resistance": 1.9965624833167097,
+    "efferent_resistance": 2.5224964208538525,
+    "reference_venous_pressure": 9.595064424630657,
+    "reference_perfusion_pressure": 85.33618524170353,
+    "filtration_coefficient": 0.2,
+    "bowman_pressure": 15.0,
+    "oncotic_pressure": 25.0,
+    "oncotic_factor": 1.2,
+    "congestion_gain": 1.0,
+    "autoregulation_gain": 0.5,
+    "resistance_min": 0.5,
+    "resistance_max": 2.0,
+    "pressure_time_constant": 10.0,
+    "excretion_fraction": 0.008680555555555556
+  },
+  "fluid": {
+    "rbc_volume": 2404.8340383212853,
+    "plasma_reference": 2939.241602392682,
+    "systemic_reference": 10860.758397607318,
+    "pulmonary_reference": 200.0,
+    "intracellular_reference": 28000.0,
+    "systemic_pressure": -2.0,
+    "pulmonary_tm_pressure": -5.0,
+    "systemic_compliance": 1000.0,
+    "pulmonary_compliance": 30.0,
+    "plasma_oncotic": 25.0,
+    "systemic_oncotic": 5.0,
+    "pulmonary_oncotic": 10.0,
+    "systemic_reflection": 1.0,
+    "pulmonary_reflection": 1.0,
+    "pulmonary_filtration": 0.00035224911057099594,
+    "pulmonary_lymph_resistance": 1000.0,
+    "pulmonary_lymph_pump": 20.272864424630654,
+    "pulmonary_lymph_maxflow": 0.01,
+    "intracellular_osmoles": 7840.0,
+    "osmotic_conductance": 555.5555555555555
+  },
+  "feedback": {
+    "sodium_reference": 0.14,
+    "sodium_fraction_reference": 0.006200396825396824,
+    "sodium_time_constant": 1800.0,
+    "water_time_constant": 300.0,
+    "sodium_perfusion_gain": 1.0,
+    "water_osmotic_gain": 20.0,
+    "water_perfusion_gain": 1.0,
+    "pressure_natriuresis_gain": 2.0,
+    "sodium_retention_gain": 1.0,
+    "sodium_limit": 2.0,
+    "water_limit": 4.0
+  },
+  "beds": [
+    {
+      "name": "E",
+      "inlet_resistance": 5.742350922022409,
+      "outlet_resistance": 0.7976963686548532,
+      "filtration_coefficient": 0.0025754368959632168,
+      "lymph_resistance": 485.3545439064227,
+      "lymph_pump_pressure": 14.095064424630657,
+      "lymph_maxflow": 0.020603495167705734
+    },
+    {
+      "name": "S",
+      "inlet_resistance": 3.3721026018583027,
+      "outlet_resistance": 0.5129893988591617,
+      "filtration_coefficient": 0.004387027074609795,
+      "lymph_resistance": 284.9309974024224,
+      "lymph_pump_pressure": 13.101975862396646,
+      "lymph_maxflow": 0.03509621659687836
+    },
+    {
+      "name": "M",
+      "inlet_resistance": 3.8154452755671935,
+      "outlet_resistance": 0.5658100905071747,
+      "filtration_coefficient": 0.0038775461834694366,
+      "lymph_resistance": 322.36882318228425,
+      "lymph_pump_pressure": 13.388350473973432,
+      "lymph_maxflow": 0.031020369467755493
+    },
+    {
+      "name": "H",
+      "inlet_resistance": 35.27950137615273,
+      "outlet_resistance": 5.724724724501674,
+      "filtration_coefficient": 0.0004195569158637357,
+      "lymph_resistance": 2979.3335605650627,
+      "lymph_pump_pressure": 12.335441257823131,
+      "lymph_maxflow": 0.0033564553269098854
+    },
+    {
+      "name": "B",
+      "inlet_resistance": 11.931359442540703,
+      "outlet_resistance": 1.9378889740514695,
+      "filtration_coefficient": 0.0012404329300938158,
+      "lymph_resistance": 1007.7126861711585,
+      "lymph_pump_pressure": 12.325446397982132,
+      "lymph_maxflow": 0.009923463440750527
+    }
+  ],
+  "metadata": {
+    "stage": "fluid_step3",
+    "heart_interface": "conservative_zero_storage_bridge",
+    "active_heart_enabled": false,
+    "sources": [
+      "docs/cardio-pulmonary-renal-coupled-equations-20261021.md",
+      "docs/coupling-tables-20261021/体液接口.csv",
+      "docs/coupling-tables-20261021/肾脏参数.csv"
+    ],
+    "stage1_parameters_sha256": "b5737b44db0303c4bdd75ca4a834ec84ca07119f194c0e7e1362accfec7bb394",
+    "stage2_parameters_sha256": "1b445ed67eeebb47b38ce7df8712f32799c2fb97cb98e78d895666263092e06a",
+    "reference_state": [
+      18.62,
+      195.57504012332458,
+      339.55290275897556,
+      160.20018678605578,
+      33.89473939118063,
+      106.75843368548956,
+      775.0609019448292,
+      1803.3667214657414,
+      601.0051901622858,
+      117.79076770329999,
+      353.30737164567205,
+      197.5812310471124,
+      14.955128000000002,
+      195.78532891999998,
+      427.23578599999996,
+      3.38591108,
+      94.9312496663342,
+      9.595064424630657,
+      0.0,
+      0.0,
+      10860.758397607318,
+      200.0,
+      28000.0,
+      1960.0
+    ],
+    "reference_boundary": {
+      "right_atrial_pressure": 4.5,
+      "left_atrial_pressure": 8,
+      "water_input": 0.017361111111111112,
+      "sodium_input": 0.001736111111111111,
+      "filtration_scale": 1,
+      "water_excretion_shift": 0,
+      "sodium_excretion_shift": 0
+    },
+    "reference_systemic_flow": 83.33333333333333,
+    "reference_pulmonary_flow": 83.33533333333332,
+    "reference_body_filtration": 0.025,
+    "reference_pulmonary_filtration": 0.002,
+    "derivation": "16血管池VRBC=.45Vb0，Ws=14000-.55Vb0-200；不抄20池总量；神经/形态自适应关闭。",
+    "limitations": [
+      "心端仅无储量质量转接，非CircAdapt心脏。",
+      "水钠瞬时混匀、有效固定蛋白量、固定细胞内有效渗透粒子量。",
+      "a/h为候选调节状态，非已校准激素；uD为机制扰动，非药物剂量。",
+      "无动态呼吸、气体交换或临床验证。"
+    ]
+  }
+}
